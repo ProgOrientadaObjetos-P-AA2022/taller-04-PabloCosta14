@@ -20,12 +20,13 @@ public class Ejecutor {
         double c2 = 8.00;
         double c3 = 9.00;
 
-        PromedioCalificaciones cf = new PromedioCalificaciones(c1, c2, c3);
-        cf.establecerPromedio();
-
-        problema1 ent = new problema1(nombre, c1, c2, c3, cf);
-
-        System.out.printf("%s\n", ent);
+        problema1 ent = new problema1(c1, c2, c3);
+        ent.establecerPromCalificaciones();
+        
+         problema1 ent2 = new problema1(nombre, c1, c2, c3);
+         ent2.obtenerPromCalificaciones();
+        System.out.printf("%s\n"+"------------------------------\n"+"%s\n"
+                , ent,ent2);
     }
 
 }

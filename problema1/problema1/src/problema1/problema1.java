@@ -14,15 +14,24 @@ public class problema1 {
     private double calificacionMateria1;
     private double calificacionMateria2;
     private double calificacionMateria3;
-    private PromedioCalificaciones promCalificaciones;
+    private double promCalificaciones;
 
-    public problema1(String a, double c1, double c2, double c3, PromedioCalificaciones c) {
-        nombreEstudiante = a;
-        calificacionMateria1 = c1;
-        calificacionMateria2 = c2;
-        calificacionMateria3 = c3;
-        promCalificaciones = c;
+    public problema1(double b, double c, double d) {
+        nombreEstudiante = "Juan Pablo";
+        calificacionMateria1 = b;
+        calificacionMateria2 = c;
+        calificacionMateria3 = d;
+        
     }
+    public problema1(String a, double b, double c, double d) {
+        nombreEstudiante = a;
+        calificacionMateria1 = b;
+        calificacionMateria2 = c;
+        calificacionMateria3 = d;
+        
+    }
+    
+    
 
     public void establecerNombreEstudiante(String c) {
         nombreEstudiante = c;
@@ -40,8 +49,9 @@ public class problema1 {
         calificacionMateria3 = c;
     }
 
-    public void establecerPromCalificaciones(PromedioCalificaciones c) {
-        promCalificaciones = c;
+    public void establecerPromCalificaciones() {
+        promCalificaciones = (calificacionMateria1 + calificacionMateria2 
+                + calificacionMateria3)/3 ;
 
     }
 
@@ -61,7 +71,7 @@ public class problema1 {
         return calificacionMateria3;
     }
 
-    public PromedioCalificaciones obtenerPromCalificaciones() {
+    public double obtenerPromCalificaciones() {
         return promCalificaciones;
     }
 
@@ -73,7 +83,7 @@ public class problema1 {
                 obtenerNombreEstudiante(),
                 obtenerCalifiacionMateria1(), obtenerCalifiacionMateria2(),
                 obtenerCalifiacionMateria3(),
-                obtenerPromCalificaciones().obtenerPromedio());
+                obtenerPromCalificaciones());
         return cadena;
     }
 
