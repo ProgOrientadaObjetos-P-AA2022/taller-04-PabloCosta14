@@ -15,6 +15,18 @@ public class Ejecutor {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        double a = 1000;
+
+        Cheque i = new Cheque(a);
+
+        i.establecerComision();
+        String d = "Josue";
+        String z = "Banco de Loja";
+        Cheque i2 = new Cheque(d, z);
+        i2.establecerComision();
+
+        System.out.printf("%s\n" + "------------------------------\n" + "%s\n",
+                i, i2);
     }
-    
+
 }
