@@ -21,17 +21,16 @@ public class problema1 {
         calificacionMateria1 = b;
         calificacionMateria2 = c;
         calificacionMateria3 = d;
-        
+
     }
+
     public problema1(String a, double b, double c, double d) {
         nombreEstudiante = a;
         calificacionMateria1 = b;
         calificacionMateria2 = c;
         calificacionMateria3 = d;
-        
+
     }
-    
-    
 
     public void establecerNombreEstudiante(String c) {
         nombreEstudiante = c;
@@ -50,8 +49,8 @@ public class problema1 {
     }
 
     public void establecerPromCalificaciones() {
-        promCalificaciones = (calificacionMateria1 + calificacionMateria2 
-                + calificacionMateria3)/3 ;
+        promCalificaciones = (calificacionMateria1 + calificacionMateria2
+                + calificacionMateria3) / 3;
 
     }
 
@@ -77,9 +76,11 @@ public class problema1 {
 
     @Override
     public String toString() {
-        String cadena = String.format("El nombre del estudiante %s\nLa calificacion de "
+        String cadena = String.format("El nombre del estudiante %s\nLa "
+                + "calificacion de "
                 + "materia 1 es %s\nLa calificacion de materia 2 es "
-                + "%s\nLa califiacion de materia 3 es %s\nEl promedio final es de %s\n",
+                + "%s\nLa califiacion de materia 3 es %s\nEl promedio "
+                + "final es de %s\n",
                 obtenerNombreEstudiante(),
                 obtenerCalifiacionMateria1(), obtenerCalifiacionMateria2(),
                 obtenerCalifiacionMateria3(),

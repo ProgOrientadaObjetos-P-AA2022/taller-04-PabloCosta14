@@ -22,11 +22,11 @@ public class Ejecutor {
 
         problema1 ent = new problema1(c1, c2, c3);
         ent.establecerPromCalificaciones();
-        
-         problema1 ent2 = new problema1(nombre, c1, c2, c3);
-         ent2.obtenerPromCalificaciones();
-        System.out.printf("%s\n"+"------------------------------\n"+"%s\n"
-                , ent,ent2);
+
+        problema1 ent2 = new problema1(nombre, c1, c2, c3);
+        ent2.obtenerPromCalificaciones();
+        System.out.printf("%s\n" + "------------------------------\n" + "%s\n",
+                ent, ent2);
     }
 
 }
