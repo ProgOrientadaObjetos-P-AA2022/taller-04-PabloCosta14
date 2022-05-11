@@ -49,7 +49,7 @@ public class Instituto {
     }
 
     public void establecerSueldoTotal() {
-        sueldoTotal = sueldoBasico + (sueldoBasico * 0.20);
+        sueldoTotal = sueldoBasico + (sueldoBasico * 20)/100;
 
     }
 
